@@ -1,1 +1,61 @@
-Welcome to the chatroom
+<h4 class="ui center aligned medium icon header">
+  <i class="circular blue chat icon"></i>
+  Let's start our chat
+</h4>
+
+<div class="ui two column grid">
+<div class="twelve wide column">
+<div class="ui feed">
+  <% @messes.each do|mess| %>
+
+  <div class="event">
+    <div class="content">
+      <div class="summary">
+
+  <div class="event">
+    <div class="content">
+      <div class="summary">
+        <em><%= mess.user.username %></em>: <%= mess.body  %>
+    </div>
+  </div>
+  </div>
+  <% end %>
+</div>
+</div>
+</div>
+  <div class="extra content">
+    <form class="ui reply form">
+      <div class="field">
+        <div class="ui fluid icon input">
+          <input type="text" placeholder="Enter a message...">
+          <i class="bordered inverted blue icon edit"></i>
+        </div>
+
+
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+  <div class="four wide column">
+    <div class="ui card">
+      <div class="content">
+
+<div class="ui inverted vertical pointing menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
